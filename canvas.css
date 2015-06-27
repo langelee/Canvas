@@ -3,12 +3,6 @@
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  * © 2015 InFaNg All Rights Reserved.
  */
-.bounce-appear {
-    -webkit-animation: bounce-appear 2s linear;
-    -moz-animation: bounce-appear 2s linear;
-    animation: bounce-appear 2s linear;
-}
-
 .appear {
     -webkit-animation: appear 2s linear;
     -moz-animation: appear 2s linear;
