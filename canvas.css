@@ -1,5 +1,5 @@
-﻿/*!
- * Canvas v1.1.0
+/*!
+ * Canvas v1.1.1 (http://infang.github.io/Canvas/)
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  * © 2015 InFaNg All Rights Reserved.
  */
@@ -163,6 +163,18 @@
     -webkit-animation: flash 2s;
     -moz-animation: flash 2s;
     animation: flash 2s;
+}
+
+.rotation-clockwise {
+    -webkit-animation: rotation-clockwise 10s linear infinite;
+    -moz-animation: rotation-clockwise 10s linear infinite;
+    animation: rotation-clockwise 10s linear infinite;
+}
+
+.rotation-anticlockwise {
+    -webkit-animation: rotation-anticlockwise 10s linear infinite;
+    -moz-animation: rotation-anticlockwise 10s linear infinite;
+    animation: rotation-anticlockwise 10s linear infinite;
 }
 
 @-webkit-keyframes appear {
@@ -638,5 +650,45 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes rotation-clockwise {
+    0% {
+        transform: none
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation-clockwise {
+    0% {
+        transform: none
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotation-anticlockwise {
+    0% {
+        transform: none
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotation-anticlockwise {
+    0% {
+        transform: none
+    }
+
+    100% {
+        transform: rotate(-360deg);
     }
 }
